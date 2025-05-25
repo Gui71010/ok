@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Proctos</title>
+    <meta name="description" content="Clínica Proctos: Excelência no tratamento de doenças do trato gastrointestinal e ânus em Montes Claros. Atendimento humanizado, consultas, exames e acompanhamento especializado.">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+            color: #fff;
+        }
+        header {
+            background: rgba(40, 13, 66, 0.97);
+            padding: 40px 0 30px 0;
+            box-shadow: 0 4px 16px rgba(123,47,242,0.2);
+            text-align: center;
+        }
+        .logo {
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 18px;
+            background: #fff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #c9a7f2;
+            margin-top: 7px;
+        }
+        main {
+            width: 100%;
+        }
+        .dados {
+            margin: 28px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .dados div {
+            font-size: 1.1em;
+            background: rgba(123,47,242,0.12);
+            border-radius: 12px;
+            padding: 10px 24px;
+        }
+        .descricao {
+            max-width: 500px;
+            margin: 35px auto 0 auto;
+            background: rgba(123,47,242,0.07);
+            border-radius: 16px;
+            padding: 25px 30px;
+            text-align: center;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 8px rgba(120,15,120,0.08);
+        }
+        .galeria {
+            max-width: 900px;
+            margin: 45px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            padding: 0 20px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 2px 16px rgba(123,47,242,0.18);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .galeria img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 28px #a15be5cc;
+        }
+        .icones-servicos {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin: 40px 0 0 0;
+            flex-wrap: wrap;
+        }
+        .icone-servico {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 18px 22px 10px 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 12px rgba(120,15,120,0.07);
+            transition: transform 0.22s;
+        }
+        .icone-servico:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 6px 20px #a15be5bb;
+        }
+        .icone-servico img {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 8px;
+        }
+        .icone-servico span {
+            font-size: 1.04em;
+            color: #fff;
+            font-weight: 500;
+        }
+        .cta {
+            margin: 42px auto 16px auto;
+            text-align: center;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 16px 38px;
+            background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
+            color: #fff;
+            border-radius: 32px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0 4px 12px #7b2ff2cc;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .cta a:hover {
+            background: linear-gradient(-90deg, #f357a8 0%, #7b2ff2 100%);
+            box-shadow: 0 8px 24px #f357a8aa;
+        }
+        .local {
+            margin: 18px auto 28px auto;
+            text-align: center;
+            color: #f3e4ff;
+        }
+        .local a {
+            color: #c9a7f2;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 16px 0 10px 0;
+            color: #c9a7f2;
+            font-size: 1em;
+            background: rgba(40, 13, 66, 0.8);
+            margin-top: 35px;
+        }
+        @media (max-width: 700px) {
+            .dados { flex-direction: column; gap: 10px; }
+            .descricao { padding: 18px 8px; }
+            .icones-servicos { flex-direction: column; gap: 12px; align-items: center; }
+            .galeria { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/7xJz7yJ.jpg" alt="Logo Clínica Proctos" class="logo">
+        <h1>Clínica Proctos</h1>
+        <h2>Excelência no tratamento de doenças do trato gastrointestinal e Ânus</h2>
+        <div class="dados">
+            <div>
+                <strong>454</strong><br>Posts
+            </div>
+            <div>
+                <strong>6.582</strong><br>Seguidores
+            </div>
+            <div>
+                <strong>1.312</strong><br>Seguindo
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="descricao">
+            <span style="font-size:1.1em; color:#bc7cff;">🔵 Dra Nayara Ribeiro – CRM: 48042</span>
+            <p>
+                Especialistas em saúde digestiva com atendimento humanizado.<br>
+                Consultas, exames e acompanhamento completo.<br>
+                Profissionalismo, empatia e tecnologia para o seu bem-estar.
+            </p>
+        </section>
+
+        <!-- Galeria com imagens ilustrativas do Instagram da clínica -->
+        <section class="galeria" aria-label="Galeria de fotos ilustrativas da clínica">
+            <img src="https://i.imgur.com/7xJz7yJ.jpg" alt="História da Clínica Proctos">
+            <img src="https://i.imgur.com/eoBg8qx.jpg" alt="Conheça a Clínica Proctos">
+            <img src="https://i.imgur.com/3eXw4Fv.jpg" alt="Como fazer seu agendamento">
+            <img src="https://i.imgur.com/8AMcC5s.jpg" alt="Dor no pé da barriga">
+            <img src="https://i.imgur.com/XM1Uj7p.jpg" alt="Doença Celíaca">
+            <img src="https://i.imgur.com/2wWJv1f.jpg" alt="Sinais de doenças inflamatórias intestinais">
+            <img src="https://i.imgur.com/2qD1wIh.jpg" alt="Cuidar de quem sempre cuidou de você">
+            <img src="https://i.imgur.com/0I6ZxjO.jpg" alt="Dra. Carla Krosskaya">
+            <img src="https://i.imgur.com/Jj2bTQ7.jpg" alt="Dra. Lícia de Matos">
+        </section>
+
+        <section class="icones-servicos" aria-label="Serviços oferecidos">
+            <div class="icone-servico">
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Equipe">
+                <span>Equipe</span>
+            </div>
+            <div class="icone-servico">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Exames">
+                <span>Exames</span>
+            </div>
+            <div class="icone-servico">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Convênios">
+                <span>Convênios</span>
+            </div>
+            <div class="icone-servico">
+                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Consultas">
+                <span>Consultas</span>
+            </div>
+            <div class="icone-servico">
+                <img src="https://cdn-icons-png.flaticon.com/512/3143/3143643.png" alt="Horário">
+                <span>Horário</span>
+            </div>
+        </section>
+        <div class="cta">
+            <a href="https://chatwith.io/s/clinicaproctos" target="_blank" rel="noopener noreferrer">Agende sua consulta</a>
+        </div>
+        <div class="local">
+            <strong>Endereço:</strong>
+            <a href="https://maps.google.com/maps?q=Rua+Irm%C3%A3+Beata,+380,+Montes+Claros" target="_blank" rel="noopener noreferrer">
+                Rua Irmã Beata, 380, Montes Claros
+            </a>
+        </div>
+    </main>
+    <footer>
+        © 2025 Clínica Proctos | Todos os direitos reservados.
+    </footer>
+</body>
+</html>
